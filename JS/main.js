@@ -70,25 +70,27 @@ const lavoratori = [
 ]
 
 
-
-
-// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 let lavoratore = 0;
 
 for (let lavoratore in lavoratori) {
     console.log(lavoratori[lavoratore]);
 
+}
+    // workersCards.innerHTML += `
+    //     <div class="container">
+    //         <h1>Il Nostro Team</h1>
+    //         <p>Vi presentiamo il nostro team,ecco qui un piccolo schema di presentazione delle nostre risorse!</p>
+    //          <div class="row">
+    //                 <div class="col-4 carta">
+                    
+    //                  < img src = "${lavoratore.foto}" alt = "photo" >
+                
+    //                  ${lavoratore.nome} <br>
+    //                      ${lavoratore.ruolo}
+    //                  </div>
+            
+    //              </div>
+    //         </div>
+    //          `}
 
-    workersCards.innerHTML +=
-        `
-    <div class="card" style="width: 18rem;">
-        <img src="./img/wayne-barnett-founder-ceo.jpg" alt="wayne-barnett" class="card-img-top" alt="...">
-            <div class="card-body">
 
-                <p class="card-text">
-                nome:${lavoratori.nome[lavoratore]}
-                ruolo:${lavoratori.ruolo[lavoratore]}
-                </p>
-            </div>
-    </div>
-`
